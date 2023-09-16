@@ -28,7 +28,7 @@
 +    - xorg-xinput
 +    - xorg-xkill
 +    - xorg-xrandr
-@@ -591,0 +592,26 @@
+@@ -591,0 +592,29 @@
 +- name: Hyprland-Desktop
 +  description: "A dynamic tiling Wayland compositor that doesn't sacrifice on its looks."
 +  hidden: false
@@ -40,7 +40,9 @@
 +      description: "Unselect to install vanilla."
 +      selected: false
 +      packages:
++        - endeavouros-theming
 +        - eos-sddm-theme
++        - ttf-font-awesome
 +  packages:
 +    - hyprland
 +    - kitty
@@ -51,10 +53,11 @@
 +    - qt6-wayland
 +#    - wev
 +    - dunst
-+    - waybar
++#    - waybar-hyprland
 +    - hyprpaper
 +    - wofi
 +#    - hyprpicker
++    - mpd
 --- modules/packagechooser.conf
 +++ modules/packagechooser.conf
 @@ -196,0 +197,4 @@ items:
