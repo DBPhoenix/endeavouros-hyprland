@@ -1,0 +1,48 @@
+--- modules/netinstall.yaml	2023-09-16 23:28:13.306718258 +0200
++++ modules/netinstall.yaml	2023-09-16 22:32:08.715546938 +0200
+@@ -7,13 +6,0 @@
+-    - name: X-System
+-      description: "Default X-System"
+-      selected: true
+-      packages:
+-        - libwnck3
+-        - mesa-utils
+-        - xf86-input-libinput
+-        - xorg-xdpyinfo
+-        - xorg-server
+-        - xorg-xinit
+-        - xorg-xinput
+-        - xorg-xkill
+-        - xorg-xrandr
+@@ -209,0 +197,13 @@
++- name: X-System
++  description: "Default X-System"
++  selected: false
++  packages:
++    - libwnck3
++    - mesa-utils
++    - xf86-input-libinput
++    - xorg-xdpyinfo
++    - xorg-server
++    - xorg-xinit
++    - xorg-xinput
++    - xorg-xkill
++    - xorg-xrandr
+@@ -591,0 +592,10 @@
++- name: Hyprland-Desktop
++  description: "A dynamic tiling Wayland compositor that doesn't sacrifice on its looks."
++  hidden: false
++  selected: false
++  expanded: false
++  critical: true
++  packages:
++    - hyprland
++    - kitty
++    - sddm
+--- modules/packagechooser.conf	2023-09-16 23:28:13.306718258 +0200
++++ modules/packagechooser.conf	2023-09-16 22:35:49.751318468 +0200
+@@ -196,0 +197,4 @@ items:
++
++    - id: Hyprland-Desktop
++      name: "Hyprland"
++      description: "Hyprland is a wlroots-based tiling Wayland compositor written in C++. Noteworthy features of Hyprland include dynamic tiling, tabbed windows, a clean and readable C++ code-base, and a custom renderer that provides window animations, rounded corners, and Dual-Kawase Blur on transparent windows."
