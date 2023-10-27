@@ -1,3 +1,8 @@
+--- modules/bootloader.conf
++++ modules/bootloader.conf
+@@ -22 +22 @@ loaderEntries:
+-kernelParams: [ "nvme_load=YES","nowatchdog" ]
++kernelParams: [ "nvme_load=YES","nowatchdog","splash" ]
 --- modules/netinstall.yaml
 +++ modules/netinstall.yaml
 @@ -7,13 +6,0 @@
@@ -14,7 +19,9 @@
 -        - xorg-xinput
 -        - xorg-xkill
 -        - xorg-xrandr
-@@ -209,0 +197,13 @@
+@@ -82,0 +70 @@
++        - plymouth
+@@ -209,0 +198,13 @@
 +- name: X-System
 +  description: "Default X-System"
 +  selected: false
@@ -28,7 +35,7 @@
 +    - xorg-xinput
 +    - xorg-xkill
 +    - xorg-xrandr
-@@ -591,0 +592,29 @@
+@@ -591,0 +593,29 @@
 +- name: Hyprland-Desktop
 +  description: "A dynamic tiling Wayland compositor that doesn't sacrifice on its looks."
 +  hidden: false

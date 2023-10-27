@@ -3,7 +3,27 @@
 - Waybar Hyprland
 - Screen Sharing
 
-# Non Pacman packages
+# List of Packages
+
+## EOS Packages
+- endeavouros-theming
+- eos-sddm-theme
+
+## Arch Packages
+- dunst
+- hyprland
+- hyprpaper
+- kitty
+- mpd
+- polkit-kde-agent
+- qt5-wayland
+- qt6-wayland
+- sddm
+- ttf-font-awesome
+- wofi
+- xdg-desktop-portal-hyprland
+
+## AUR Packages
 - waybar-hyprland
 - wev
 - hyprpicker
